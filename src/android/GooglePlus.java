@@ -291,7 +291,7 @@ public class GooglePlus extends CordovaPlugin implements GoogleApiClient.OnConne
         Log.i(TAG, "In onActivityResult");
 
         if (requestCode == RC_GOOGLEPLUS) {
-            Log.i(TAG, "One of our activities finished up");
+            Log.i(TAG, "One of our activities finished up:resultcode="+resultCode.toString());
             //Call handleSignInResult passing in sign in result object
             handleSignInResult(Auth.GoogleSignInApi.getSignInResultFromIntent(intent));
         }
